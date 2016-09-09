@@ -11,3 +11,10 @@ response headers (content policy 1.0)
 ```
 content-security-policy: default-src 'self'; style-src 'self'; image-src 'self' http://loaclhost:8080;
 ```
+IE:X-Content-Security-Policy
+
+#####22
+03:00 to run server (allow inline script)
+```
+gulp serve-dev --nosync  //run localhost:8001
+```
