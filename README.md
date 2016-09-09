@@ -18,3 +18,8 @@ IE:X-Content-Security-Policy
 ```
 gulp serve-dev --nosync  //run localhost:8001
 ```
+
+######32 generate cert
+```
+openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
+```
