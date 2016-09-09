@@ -23,3 +23,8 @@ gulp serve-dev --nosync  //run localhost:8001
 ```
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
 ```
+######33 Impl
+remove paraphrase we generated last clip
+```
+openssl rsa -in key.pem -out back.pem && mv back.pem key.pem
+```
