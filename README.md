@@ -28,3 +28,13 @@ remove paraphrase we generated last clip
 ```
 openssl rsa -in key.pem -out back.pem && mv back.pem key.pem
 ```
+
+34 wireshark
+http filter:
+```
+http.host contains "localhost"
+```
+https filter:
+```
+tcp.port==8001
+```
