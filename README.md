@@ -38,3 +38,20 @@ https filter:
 ```
 tcp.port==8001
 ```
+######38
+automatic submit form:
+```
+document.forms[0].submit();
+```
+######41 Attack prevention
+Header checks, Synchonizer token pattern.
+
+######46 Synchronizer example
+1 user request a login, server receive that request.  
+2 server create a session fot that user for a reference for subsequence request from this user  
+3 response the resource we requeted  
+4 user request profile resource from server  
+5 server generate form with CSRF token using the user's session  
+6 response back with CSRF token
+7 User change the profile, request change with token  
+8 server validate CSRF token, if valid, then process change
