@@ -72,3 +72,11 @@ iframe{
 <button style="z-index:-1;">click here</button>
 <iframe src="https://" width="400" height="800"></iframe>
 ```
+######56 Prevention with HTTP header
+X-FRAME-OPTIONS  
+[mozilla doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
+```
+DENY:The browser will deny any attempts to load any sites from iframe
+SAMEORIGIN
+ALLOW-FROM uri    //means that site `uri` can load iframe of this site.
+```
